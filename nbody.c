@@ -218,7 +218,7 @@ int main()
             fprintf(fd, "\n");
             fflush(fd);
 
-            // --- 输出 xyz, vxvyvz (AU/year) 和 RV (m/s) ; 观测方向为 +x，RV 取 vx ---
+            // --- 输出 xyz, vxvyvz (AU/year) 和 RV (m/s) 
             fprintf(fxyz_rv, "%20.6f", (t / tpi) * 365.25); // 第1列：时间
 
             for (i = 0; i < nbod; i++) {
@@ -297,3 +297,4 @@ int main()
     fclose(fxyz_rv);
     return 0;
 }
+
