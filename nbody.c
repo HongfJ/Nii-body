@@ -231,8 +231,6 @@ int main()
                 double vy_au_per_year = vy_rad * tpi;
                 double vz_au_per_year = vz_rad * tpi;
 
-                /* 观测方向在 +x，视线单位向量约为 (1, 0, 0)。在遥远观测者近似下
-                   视向速度约等于 x 方向速度分量（AU/year）。 */
                 double rv_au_per_year = - vz_au_per_year;
                 double rv_mps = rv_au_per_year * AU_PER_YEAR_TO_MPS;
 
@@ -297,4 +295,5 @@ int main()
     fclose(fxyz_rv);
     return 0;
 }
+
 
